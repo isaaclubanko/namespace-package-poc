@@ -9,7 +9,7 @@ try:
     ) as version_file:
         VERSION = version_file.read().strip()
 except:
-    VERSION = '0.0.1'
+    VERSION = '0.0.2'
 
 
 setup(
