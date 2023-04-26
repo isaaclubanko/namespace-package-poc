@@ -9,7 +9,7 @@ try:
     ) as version_file:
         VERSION = version_file.read().strip()
 except:
-    VERSION = '0.0.2'
+    VERSION = '0.0.3'
 
 
 setup(
@@ -20,7 +20,7 @@ setup(
     description="A utility",
     long_description_content_type="text/markdown",
     # url="https://github.com/Greenphire/ClinCardAutomatedSync",
-    packages=find_namespace_packages(include=['mynamespace.*']),
+    packages=find_namespace_packages(include=['namespace_formatting.*']),
     install_requires=[
         'requests==2.27.1'
     ]
