@@ -20,7 +20,8 @@ setup(
     description="A utility",
     long_description_content_type="text/markdown",
     packages=find_packages(),
-    namespace_packages=['namespace_excel'],
+    packages=['namespace_excel.excel'],
+    zip_safe=False,
     install_requires=[
         'openpyxl==3.0.10',
         'pandas==1.3.5'
