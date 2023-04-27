@@ -1,6 +1,6 @@
 import os
 
-from setuptools import setup, find_namespace_packages
+from setuptools import setup, find_packages
 
 
 try:
@@ -9,7 +9,7 @@ try:
     ) as version_file:
         VERSION = version_file.read().strip()
 except:
-    VERSION = '0.0.3'
+    VERSION = '0.0.4'
 
 
 setup(
@@ -19,8 +19,8 @@ setup(
     author_email="clincard@greenphire.com",
     description="A utility",
     long_description_content_type="text/markdown",
-    # url="https://github.com/Greenphire/ClinCardAutomatedSync",
-    packages=find_namespace_packages(include=['namespace_formatting.*']),
+    packages=find_packages(),
+    namespace_packages=['namespace_formatting']
     install_requires=[
         'requests==2.27.1'
     ]
