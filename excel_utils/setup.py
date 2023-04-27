@@ -19,7 +19,6 @@ setup(
     author_email="clincard@greenphire.com",
     description="A utility",
     long_description_content_type="text/markdown",
-    packages=find_packages(),
     packages=['namespace_excel.excel'],
     zip_safe=False,
     install_requires=[
