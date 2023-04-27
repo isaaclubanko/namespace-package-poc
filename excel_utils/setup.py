@@ -1,6 +1,6 @@
 import os
 
-from setuptools import setup, find_packages
+from setuptools import setup, find_namespace_packages
 
 
 try:
@@ -9,7 +9,7 @@ try:
     ) as version_file:
         VERSION = version_file.read().strip()
 except:
-    VERSION = '0.0.6'
+    VERSION = '0.0.8'
 
 
 setup(
@@ -19,7 +19,7 @@ setup(
     author_email="clincard@greenphire.com",
     description="A utility",
     long_description_content_type="text/markdown",
-    packages=['namespace_excel.excel'],
+    packages=find_namespace_packages(include=['namespace_excel.*']),
     zip_safe=False,
     install_requires=[
         'openpyxl==3.0.10',
